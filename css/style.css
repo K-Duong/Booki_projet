@@ -461,8 +461,8 @@ footer a {
   }
 }
 
-/*  Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+/*  Medium devices (tablets, less than 768px) */
+@media (max-width: 768px) {
   #logo {
     margin: 1.88rem 1.25rem;
   }
@@ -518,8 +518,8 @@ footer a {
   }
 }
 
-/* // Small devices (landscape phones, less than 768px) */
-@media (min-width: 767.99px) {
+/* // Small devices (landscape phones, less than 425px) */
+@media (min-width: 425px) {
   nav div {
     padding-top: 25px;
     border-top: solid 3px transparent;
@@ -535,7 +535,16 @@ footer a {
   body {
     margin: 0;
   }
-  
+  main,
+  footer {
+    padding: 0px
+  }
+
+  main .searchContainer,
+  footer {
+    padding: 0 1.25rem
+  }
+
   .main-container {
     padding: 0;
   }
