@@ -235,9 +235,9 @@ nav a:visited {
   gap: 0.94rem;
 }
 
-.filter-categorie.filter-blue {
+/* .filter-categorie.filter-blue {
   background-color: var(--filter-bg-color);
-}
+} */
 
 .filter-categorie {
   display: flex;
@@ -246,8 +246,13 @@ nav a:visited {
   gap: 10px;
   border-radius: 25px;
   border: 2px solid var(--grey-tint-2-color);
+  background-color: var(--white) ;
 }
 
+.filter-categorie:hover{
+    cursor: pointer;
+    background-color: var(--filter-bg-color);
+}
 .search-info {
   gap: 0.75rem;
 }
