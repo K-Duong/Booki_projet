@@ -87,6 +87,18 @@ body {
   max-width: 1440px;
   box-sizing: border-box;
 }
+a {
+    /* color: var(--black); */
+    text-decoration: none;
+}
+
+a:link{
+   color: var(--black); 
+}
+a:visited {
+    color: var(--black);
+}
+
 
 /******Main******/
 main {
@@ -135,6 +147,16 @@ nav a {
 nav div.hyperlink {
   color: var(--main-color);
 }
+
+nav div.hyperlink .text-hyperlink-active{
+    color: var(--main-color)
+}
+
+nav a:hover{
+    color: var(--main-color);
+    font-weight: 700;
+}
+
 
 /******Main/Search-Container******/
 .searchContainer {
@@ -442,6 +464,11 @@ footer h2 {
 footer a {
   font-size: var(--footer-hyperlink-font-size);
   font-weight: var(--footer-hyperlink-font-weight);
+}
+
+footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer-col {
