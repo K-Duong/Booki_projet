@@ -23,16 +23,16 @@
   <body>
     <div class="main-container">
       <header>
-        <img id="logo" src="./images/logo/Booki.png" alt="logo-Booki" />
+        <img id="logo-booki" src="./images/logo/Booki.png" alt="logo-Booki" />
         <nav>
-          <div class="hyperlink hyperlink-active">
+          <div class="hyperlink-box hyperlink-active">
             <!-- ancre à la section hébergements -->
 
-            <a href="#hebergements" class="text-hyperlink-active">Hébergements</a>
+            <a class="hyperlink-text" href="#hebergements" class="text-hyperlink-active">Hébergements</a>
           </div>
-          <div class="hyperlink">
+          <div class="hyperlink-box">
             <!-- ancre à la section activités -->
-            <a href="#activites">Activités</a>
+            <a class="hyperlink-text" href="#activites">Activités</a>
           </div>
         </nav>
       </header>
@@ -63,20 +63,20 @@
             <div class="search-row search-filter-categories">
               <button class="filter-categorie">
                 <i class="fa-solid fa-icon-categorie fa-money-bill-wave"></i>
-                <h3>Économique</h3>
+                <h3 class = "filter-categorie-label">Économique</h3>
               </button>
               <button class="filter-categorie">
                 <i class="fa-solid fa-icon-categorie fa-person"></i>
-                <h3>Familial</h3>
+                <h3 class = "filter-categorie-label">Familial</h3>
               </button>
               <button class="filter-categorie">
                 <i class="fa-solid fa-icon-categorie fa-heart"></i>
-                <h3>Romantique</h3>
+                <h3 class = "filter-categorie-label">Romantique</h3>
               </button>
               <!-- <button class="filter-categorie filter-blue"> -->
                 <button class="filter-categorie">
                 <i class="fa-solid fa-icon-categorie fa-fire"></i>
-                <h3>Nos pépites</h3>
+                <h3 class = "filter-categorie-label">Nos pépites</h3>
               </button>
             </div>
           </div>
@@ -96,12 +96,12 @@
             <h2 class="section-title">Hébergements à Marseille</h2>
             <div class="hotels">
               <article class="card card-hotel card-hotel-1">
-                <div class="card-hotel-img card-hotel-img-1">
-                  <!-- <img src="./images/hebergements/fred-kleber.jpg" alt="Hôtel du port"> -->
-                </div>
+                <!-- <div class="card-hotel-img card-hotel-img-1"> -->
+                  <img class="hotel-img" src="./images/hebergements/hotel_du_port.jpg" alt="Hôtel du port">
+                <!-- </div> -->
                 <div class="card-hotel-description">
                   <h3 class="card-title">Hôtel du port</h3>
-                  <p>Nuit à partir de 52<span class="euro">€</span></p>
+                  <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -116,12 +116,12 @@
                 </div>
               </article>
               <article class="card card-hotel card-hotel-2">
-                <div class="card-hotel-img card-hotel-img-2">
-                  <!-- <img src="./images/hebergements/febrian-zakaria.jpg" alt="Hôtel chez Amina">    -->
-                </div>
+                <!-- <div class="card-hotel-img card-hotel-img-2"> -->
+                  <img class="hotel-img" src="./images/hebergements/hotel_chez_amina.jpg" alt="Hôtel chez Amina">   
+                <!-- </div> -->
                 <div class="card-hotel-description">
                   <h3 class="card-title">Hôtel Chez Amina</h3>
-                  <p>Nuit à partir de 98<span class="euro">€</span></p>
+                  <p class="card-subtitle">Nuit à partir de 98<span class="euro">€</span></p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -136,12 +136,12 @@
                 </div>
               </article>
               <article class="card card-hotel card-hotel-3">
-                <div class="card-hotel-img card-hotel-img-3">
-                  <!-- <img src="./images/hebergements/reisetopia.jpg" alt="Hôtel les mouettes"> -->
-                </div>
+                <!-- <div class="card-hotel-img card-hotel-img-3"> -->
+                  <img class="hotel-img" src="./images/hebergements/hotel_les_mouettes.jpg" alt="Hôtel les mouettes">
+                <!-- </div> -->
                 <div class="card-hotel-description">
                   <h3 class="card-title">Hôtel Les mouettes</h3>
-                  <p>Nuit à partir de 76<span class="euro">€</span></p>
+                  <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -156,12 +156,12 @@
                 </div>
               </article>
               <article class="card card-hotel card-hotel-4">
-                <div class="card-hotel-img card-hotel-img-4">
-                  <!-- <img class="hotel-img" src="./images/hebergements/hotel_de_mer.jpg" alt="Hôtel de la mer"> -->
-                </div>
+                <!-- <div class="card-hotel-img card-hotel-img-4"> -->
+                  <img class="hotel-img" src="./images/hebergements/hotel_de_mer.jpg" alt="Hôtel de la mer">
+                <!-- </div> -->
                 <div class="card-hotel-description">
                   <h3 class="card-title">Hôtel de la mer</h3>
-                  <p>Nuit à partir de 46<span class="euro">€</span></p>
+                  <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -176,12 +176,12 @@
                 </div>
               </article>
               <article class="card card-hotel card-hotel-5">
-                <div class="card-hotel-img card-hotel-img-5">
-                  <!-- <img src="./images/hebergements/marcus-loke.jpg" alt="Auberge la Canebière"> -->
-                </div>
+                <!-- <div class="card-hotel-img card-hotel-img-5"> -->
+                  <img class="hotel-img" src="./images/hebergements/auberge_canebiere.jpg" alt="Auberge la Canebière">
+                <!-- </div> -->
                 <div class="card-hotel-description">
                   <h3 class="card-title">Auberge La Canebière</h3>
-                  <p>Nuit à partir de 25<span class="euro">€</span></p>
+                  <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -196,12 +196,12 @@
                 </div>
               </article>
               <article class="card card-hotel card-hotel-6">
-                <div class="card-hotel-img card-hotel-img-6">
-                  <!-- <img src="./images/hebergements/nicate-lee.jpg" alt="Auberge le panier"> -->
-                </div>
+                <!-- <div class="card-hotel-img card-hotel-img-6"> -->
+                  <img class="hotel-img" src="./images/hebergements/auberge_panier.jpg" alt="Auberge le panier">
+                <!-- </div> -->
                 <div class="card-hotel-description">
                   <h3 class="card-title">Auberge Le Panier</h3>
-                  <p>Nuit à partir de 23<span class="euro">€</span></p>
+                  <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -216,8 +216,8 @@
                 </div>
               </article>
             </div>
-            <!-- attention! taille h4 > grand que h3 -->
-            <h2>Afficher plus</h2>
+            <!-- redéfinir le tag -->
+            <h2 class="subtitle">Afficher plus</h2>
           </section>
           <section class="populaires">
             <div class="populaires-title">
@@ -314,7 +314,7 @@
                 <!-- <img src="./images/activites/vieux_port.jpg" alt="Vieux Port"> -->
               </div>
               <div class="activite-location">
-                <h3>Vieux-Port</h3>
+                <h3 class="card-title">Vieux-Port</h3>
               </div>
             </div>
             <div class="card-activite card-activite-description">
@@ -322,7 +322,7 @@
                 <!-- <img src="./images/activites/fort_pomegue.jpg" alt="Fort de Pomègue" > -->
               </div>
               <div class="activite-location">
-                <h3>Fort de Pomègues</h3>
+                <h3 class="card-title">Fort de Pomègues</h3>
               </div>
             </div>
             <div class="card-activite card-activite-description">
@@ -330,7 +330,7 @@
                 <!-- <img src="./images/activites/parc_calanque.jpg" alt="Parc national des Calanques" > -->
               </div>
               <div class="activite-location">
-                <h3>Parc national des Calanques</h3>
+                <h3 class="card-title">Parc national des Calanques</h3>
               </div>
             </div>
             <div class="card-activite card-activite-description">
@@ -338,7 +338,7 @@
                 <!-- <img src="./images/activites/notre_dame.jpg" alt="Notre Dame de la Garde" > -->
               </div>
               <div class="activite-location">
-                <h3>Notre-Dame-de-la-Garde</h3>
+                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
               </div>
             </div>
           </div>
@@ -346,21 +346,21 @@
       </main>
 
       <footer>
-        <div class="footer-col footer-propos">
-          <h2 class="card-title">A propos</h2>
-          <a>Fontionnement du site</a>
-          <a>Conditions générales</a>
-          <a>Données et confidentialité</a>
+        <div class="footer-content footer-propos">
+          <h2 class="footer-title">A propos</h2>
+          <a class="footer-hyperlink">Fontionnement du site</a>
+          <a class="footer-hyperlink">Conditions générales</a>
+          <a class="footer-hyperlink">Données et confidentialité</a>
         </div>
-        <div class="footer-col footer-nos-hebergements">
-          <h2 class="card-title">Nos hébergements</h2>
-          <a>Charte qualité</a>
-          <a>Proposer votre hôtel</a>
+        <div class="footer-content footer-nos-hebergements">
+          <h2 class="footer-title">Nos hébergements</h2>
+          <a class="footer-hyperlink">Charte qualité</a>
+          <a class="footer-hyperlink">Proposer votre hôtel</a>
         </div>
-        <div class="footer-col footer-assistance">
-          <h2 class="card-title">Assistance</h2>
-          <a>Centre d'aide</a>
-          <a>Nous contacter</a>
+        <div class="footer-content footer-assistance">
+          <h2 class="footer-title">Assistance</h2>
+          <a class="footer-hyperlink">Centre d'aide</a>
+          <a class="footer-hyperlink">Nous contacter</a>
         </div>
       </footer>
     </div>

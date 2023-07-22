@@ -12,23 +12,30 @@
   --black: black;
 
   /* text config */
-  --header-font-weight: 400;
-  --header-font-size: 1rem;
+  --nav-hyperlink-font-weight: 400;
+  --nav-hyperlink-font-size: 1rem;
 
   --body-h1-font-weight: 700;
   --body-h1-font-size: 1.375rem;
-  --body-h2-section-title-font-size: 1.375rem;
-  --body-h2-font-size: 1.125rem;
-  --body-h2-font-weight: 700;
-  --body-h3-font-size: 1rem;
-  --body-h3-font-weight: 700;
-  --body-h4-font-size: 1.0625rem;
-  --body-h4-font-weight: 700;
   --body-p-font-size: 1rem;
   --body-p-font-weight: 400;
-  --body-p-description-font-size: 0.875rem;
-  --body-p-description-font-weight: 400;
-  --body-input-font-size: 1.125rem;
+
+  --input-font-size: 1.125rem;
+  --filter-title-font-size: 1.125rem;
+  --filter-title-font-weight: 700;
+  --filter-categorie-font-weight: 700;
+  --desktop-filter-categorie-font-size: 1.0625rem;
+  --tablet-filter-categorie-font-size: 1rem;
+  --mobile-filter-categorie-font-size: 0.875rem;
+
+  --section-title-font-size: 1.375rem;
+  --section-title-font-weight: 700;
+  --card-title-font-size: 1rem;
+  --card-title-font-weight: 700;
+  --card-subtitle-font-size: 0.875rem;
+  --card-subtitle-font-weight: 400;
+  --subtitle-font-size: 1.125rem;
+  --subtitle-font-weight: 700;
 
   --footer-title-font-size: 1.125rem;
   --footer-title-font-weight: 700;
@@ -74,15 +81,26 @@ h3,
 p {
   margin: 0px;
 }
-h2.section-title {
-  font-size: var(--body-h2-section-title-font-size);
+.section-title {
+  font-size: var(--section-title-font-size);
+  font-weight: var(--section-title-font-weight);
 }
 
+.card-title {
+  font-size: var(--card-title-font-size);
+  font-weight: var(--card-title-font-weight);
+}
+
+.card-subtitle {
+  font-size: var(--card-subtitle-font-size);
+  font-weight: var(--card-subtitle-font-weight);
+}
 .card:hover,
-.card-activite:hover{
-    cursor: pointer;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
-} 
+.card-activite:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.24),
+    0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /******Body******/
 body {
   display: flex;
@@ -110,14 +128,6 @@ main h1 {
   font-size: var(--body-h1-font-size);
   font-weight: var(--body-h1-font-weight);
 }
-main h2 {
-  font-size: var(--body-h2-font-size);
-  font-weight: var(--body-h2-font-weight);
-}
-main h3 {
-  font-size: var(--body-h3-font-size);
-  font-weight: var(--body-h3-font-weight);
-}
 
 main,
 footer {
@@ -132,7 +142,7 @@ header {
   align-items: flex-start;
 }
 
-#logo {
+#logo-booki {
   width: 60px;
   margin: 1.88rem 1.25rem;
 }
@@ -144,17 +154,16 @@ nav {
   margin: 0 25px 0 25px;
 }
 
-nav a {
-  font-size: var(--header-font-size);
-  font-weight: var(--header-font-weight);
+.hyperlink-box > .hyperlink-text {
+  font-size: var(--nav-hyperlink-font-size);
+  font-weight: var(--nav-hyperlink-font-weight);
 }
 
-nav div.hyperlink {
+nav div.hyperlink-box {
   padding-top: 25px;
-  /* border-top: solid 3px transparent; */
 }
 
-nav div.hyperlink:hover {
+nav div.hyperlink-box:hover {
   border-top: 3px solid var(--main-color);
 }
 
@@ -194,15 +203,15 @@ nav a:visited {
 
 .searchContainer .search-box {
   height: 49px;
+  align-items: stretch;
 }
 
 .search-box .search-input {
-    height: 3rem;
   font-size: 1.1rem;
   font-weight: bold;
   color: var(--black);
-    padding: 0px 24px 0px 24px;
-    border : var(--main-bg-color) solid 0.5px;
+  padding: 0px 24px 0px 24px;
+  border: var(--main-bg-color) solid 0.5px;
 }
 
 .search-input::placeholder {
@@ -222,12 +231,13 @@ nav a:visited {
 }
 
 .search-btn .search-label {
-  font-size: 1.125rem;
+  font-size: var(--input-font-size);
 }
 
 .search-btn:hover {
-    cursor: pointer;
-    box-shadow:  0 5px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .searchContainer .search-filter {
@@ -237,6 +247,13 @@ nav a:visited {
 
 .search-filter .filter-title {
   padding: 19px 0 19px 0;
+  font-size: var(--filter-title-font-size);
+  font-weight: var(--filter-title-font-weight);
+}
+
+.filter-categorie > .filter-categorie-label {
+  font-size: var(--desktop-filter-categorie-font-size);
+  font-weight: var(--filter-categorie-font-weight);
 }
 
 .search-filter-categories {
@@ -254,12 +271,12 @@ nav a:visited {
   gap: 10px;
   border-radius: 25px;
   border: 2px solid var(--grey-tint-2-color);
-  background-color: var(--white) ;
+  background-color: var(--white);
 }
 
-.filter-categorie:hover{
-    cursor: pointer;
-    background-color: var(--filter-bg-color);
+.filter-categorie:hover {
+  cursor: pointer;
+  background-color: var(--filter-bg-color);
 }
 .search-info {
   gap: 0.75rem;
@@ -285,12 +302,12 @@ nav a:visited {
   justify-content: space-between;
 }
 
-.hebergements-and-populaires p {
-  font-size: var(--body-p-description-font-size);
-  font-weight: var(--body-p-description-font-weight);
-}
+/* .hebergements-and-populaires .card-subtitle {
+  font-size: var(--card-subtitle-font-size);
+  font-weight: var(--card-subtitle-font-weight);
+} */
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires > section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 1.88rem;
@@ -318,7 +335,6 @@ nav a:visited {
   padding-bottom: 0.94rem;
   border-radius: 20px;
   background-color: var(--white);
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card-hotel-description {
@@ -334,25 +350,19 @@ nav a:visited {
   border-top-right-radius: 20px;
   background-size: cover;
   background-position: center;
-  border: var(--white) solid 5px;
 }
-.card-hotel-img.card-hotel-img-1 {
-  background-image: url("../images/hebergements/hotel_du_port.jpg");
+
+.card-hotel .hotel-img {
+  object-fit: cover;
+  width: 100%;
+  height: 7.75rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-.card-hotel-img.card-hotel-img-2 {
-  background-image: url("../images/hebergements/hotel_chez_amina.jpg");
-}
-.card-hotel-img.card-hotel-img-3 {
-  background-image: url("../images/hebergements/hotel_les_mouettes.jpg");
-}
-.card-hotel-img.card-hotel-img-4 {
-  background-image: url("../images/hebergements/hotel_de_mer.jpg");
-}
-.card-hotel-img.card-hotel-img-5 {
-  background-image: url("../images/hebergements/auberge_canebiere.jpg");
-}
-.card-hotel-img.card-hotel-img-6 {
-  background-image: url("../images/hebergements/auberge_panier.jpg");
+
+.subtitle {
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--subtitle-font-weight);
 }
 
 /****** Populaires ***********/
@@ -395,9 +405,9 @@ nav a:visited {
   margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+/* .populaires-cards .card-subtitle {
   margin: 0;
-}
+} */
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
@@ -436,12 +446,12 @@ nav a:visited {
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
-.card-activite-description h3 {
+.activite-location > .card-title {
   padding: 20px;
 }
 
 .activite-img {
-  height: 47vh;
+  height: 27rem;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 20px;
@@ -472,22 +482,21 @@ footer {
   background-color: var(--main-bg-color);
 }
 
-footer h2 {
+.footer-content > .footer-title {
   font-size: var(--footer-title-font-size);
   font-weight: var(--footer-title-font-weight);
 }
-
-footer a {
+.footer-content > .footer-hyperlink {
   font-size: var(--footer-hyperlink-font-size);
   font-weight: var(--footer-hyperlink-font-weight);
 }
 
-footer a:hover {
+.footer-content > .footer-hyperlink:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.footer-col {
+.footer-content {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -498,15 +507,18 @@ footer a:hover {
 
 /****** Media queries ***********/
 /* Larges devices (desktop, less/equal than 1024px) */
-@media (max-width: 1024px) {
-  #logo {
+@media (max-width: 1440px) {
+  #logo-booki {
     margin: 1.88rem 1.88rem 1.88rem 0;
+  }
+  .activite-img {
+    height: 20rem;
   }
 }
 
 /*  Medium devices (tablets, less than 768px) */
-@media (max-width: 768px) {
-  #logo {
+@media (max-width: 1024px) {
+  #logo-booki {
     margin: 1.88rem 1.25rem;
   }
 
@@ -517,6 +529,10 @@ footer a:hover {
 
   .search-filter .filter-title {
     padding: 0;
+  }
+
+  .filter-categorie > .filter-categorie-label {
+    font-size: var(--tablet-filter-categorie-font-size);
   }
 
   .hebergements-and-populaires {
@@ -551,7 +567,7 @@ footer a:hover {
   }
 
   .activite-img {
-    height: 35vh;
+    height: 12.5rem;
   }
 
   .activite-location {
@@ -592,20 +608,20 @@ footer a:hover {
     justify-content: space-between;
   }
 
-  nav div {
+  nav div.hyperlink-box {
     display: flex;
-    flex: 1;
+    flex-grow: 1;
     padding-top: 0;
     align-items: flex-start;
     justify-content: center;
     padding-bottom: 15px;
   }
-  nav div.hyperlink:hover {
+  nav div.hyperlink-box:hover {
     border-top: 0;
     border-bottom: 2px solid var(--main-color);
   }
 
-  #logo {
+  #logo-booki {
     margin: 1.88rem 1.88rem 1.88rem 1.88rem;
   }
 
@@ -614,17 +630,21 @@ footer a:hover {
   }
 
   .search-box .search-input {
-    flex: 1;
+    flex-grow: 1;
+    min-width: 0;
   }
 
   .search-input::placeholder {
     color: var(--black);
     font-size: 18px;
-    padding-left: 15px;
   }
 
   .search-filter-categories {
     flex-wrap: wrap;
+  }
+
+  .filter-categorie > .filter-categorie-label {
+    font-size: var(--mobile-filter-categorie-font-size);
   }
 
   .fa-magnifying-glass {
@@ -678,7 +698,7 @@ footer a:hover {
     width: 100%;
   }
   .activite-img {
-    height: 20vh;
+    height: 8.5rem;
   }
   footer {
     flex-direction: column;
@@ -689,5 +709,8 @@ footer a:hover {
   .icon-location,
   .search-box .search-btn {
     padding: 0.7rem;
+  }
+  .search-box .search-input {
+    padding: 0 0 0 24px;
   }
 }
