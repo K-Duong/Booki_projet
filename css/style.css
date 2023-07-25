@@ -60,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem;
+  padding: 19px;
   background-color: var(--main-bg-color);
   border-radius: 15px 0 0 15px;
 }
@@ -122,7 +122,7 @@ a {
 main {
   display: flex;
   flex-direction: column;
-  gap: 2.19rem;
+  gap: 35px;
 }
 main h1 {
   font-size: var(--body-h1-font-size);
@@ -131,7 +131,7 @@ main h1 {
 
 main,
 footer {
-    margin: 0 1.25rem;
+    margin: 0 20px;
 }
 
 /******* Header ********/
@@ -144,13 +144,13 @@ header {
 
 #logo-booki {
   width: 60px;
-  margin: 1.88rem 1.25rem;
+  margin: 30px 20px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  gap: 1.88rem;
+  gap: 30px;
   margin: 0 25px 0 25px;
 }
 
@@ -180,8 +180,8 @@ nav div.hyperlink-box:hover {
 .searchContainer {
   display: flex;
   flex-direction: column;
-  gap: 2.19rem;
-  margin-top: 1.88rem;
+  gap: 35px;
+  margin-top: 30px;
 }
 
 .searchContainer p {
@@ -198,7 +198,7 @@ nav div.hyperlink-box:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .searchContainer .search-box {
@@ -242,7 +242,7 @@ nav div.hyperlink-box:hover {
 
 .searchContainer .search-filter {
   display: flex;
-  gap: 0.94rem;
+  gap: 15px;
 }
 
 .search-filter .filter-title {
@@ -257,7 +257,7 @@ nav div.hyperlink-box:hover {
 }
 
 .search-filter-categories {
-  gap: 0.94rem;
+  gap: 15px;
 }
 
 /* .filter-categorie.filter-blue {
@@ -279,7 +279,7 @@ nav div.hyperlink-box:hover {
   background-color: var(--filter-bg-color);
 }
 .search-info {
-  gap: 0.75rem;
+  gap: 10px;
 }
 .search-info .icon-info {
   align-self: center;
@@ -305,7 +305,7 @@ nav div.hyperlink-box:hover {
 .hebergements-and-populaires > section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 1.88rem;
+  padding: 30px;
   box-sizing: border-box;
 }
 
@@ -314,20 +314,20 @@ nav div.hyperlink-box:hover {
   width: 65%;
   display: flex;
   flex-direction: column;
-  gap: 1.88rem;
+  gap: 30px;
 }
 
 .hotels {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 1.88rem;
+  row-gap: 30px;
   justify-content: space-between;
 }
 
 .card-hotel {
   width: 30%;
-  padding-bottom: 0.94rem;
+  padding-bottom: 15px;
   border-radius: 20px;
   background-color: var(--white);
 }
@@ -335,7 +335,7 @@ nav div.hyperlink-box:hover {
 .card-hotel-description {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 8px;
   padding: 0px 15px 0px 15px;
 }
 
@@ -350,7 +350,7 @@ nav div.hyperlink-box:hover {
 .card-hotel .hotel-img {
   object-fit: cover;
   width: 100%;
-  height: 7.75rem;
+  height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -388,7 +388,7 @@ nav div.hyperlink-box:hover {
 
 .populaires-cards .card-content {
   width: 67%;
-  padding-left: 0.94rem;
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -423,14 +423,14 @@ nav div.hyperlink-box:hover {
 .activites {
   display: flex;
   flex-direction: column;
-  margin: 1.88rem;
-  gap: 1.88rem;
+  margin: 30px;
+  gap: 30px;
 }
 
 .cards-activites {
   display: flex;
   flex-direction: row;
-  gap: 1.88rem;
+  gap: 30px;
 }
 
 .card-activite-description {
@@ -495,7 +495,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  gap: 0.94rem;
+  gap: 15px;
   width: 30%;
 }
 
@@ -505,7 +505,7 @@ footer {
 /* Larges devices (desktop, less/equal than 1440px) */
 @media (max-width: 1440px) {
   #logo-booki {
-    margin: 1.88rem 1.88rem 1.88rem 0;
+    margin: 30px 30px 30px 0;
   }
   .activite-img {
     height: 20rem;
@@ -515,7 +515,7 @@ footer {
 /*  Medium devices (tablets, less than 1024px) */
 @media (max-width: 1024px) {
   #logo-booki {
-    margin: 1.88rem 1.25rem;
+    margin: 30px 20px;
   }
 
   .searchContainer .search-filter {
@@ -543,7 +543,7 @@ footer {
 
   .populaires {
     width: 100%;
-    margin-top: 1.25rem;
+    margin-top: 20px;
   }
 
   .populaires-cards {
@@ -588,7 +588,7 @@ footer {
 
   main .searchContainer,
   footer {
-    padding: 0 1.25rem;
+    padding: 0 20px;
   }
 
   .main-container {
@@ -621,7 +621,7 @@ footer {
   }
 
   #logo-booki {
-    margin: 1.88rem 1.88rem 1.88rem 1.88rem;
+    margin: 30px;
   }
 
   .search-btn .search-label {
@@ -707,7 +707,7 @@ footer {
   }
 }
 /* Small devices (portrait phones, less than 320px) */
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .icon-location,
   .search-box .search-btn {
     padding: 0.7rem;
@@ -715,4 +715,4 @@ footer {
   .search-box .search-input {
     padding: 0 0 0 24px;
   }
-}
+} */
