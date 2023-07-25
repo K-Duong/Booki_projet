@@ -167,12 +167,12 @@ nav div.hyperlink-box:hover {
   border-top: 3px solid var(--main-color);
 }
 
-nav a:hover,
-nav a:hover:visited {
+.hyperlink-box > .hyperlink-text:hover,
+.hyperlink-box > .hyperlink-text:hover:visited {
   color: var(--main-color);
 }
 
-nav a:visited {
+.hyperlink-box > .hyperlink-text:visited {
   color: var(--black);
 }
 
