@@ -302,11 +302,6 @@ nav a:visited {
   justify-content: space-between;
 }
 
-/* .hebergements-and-populaires .card-subtitle {
-  font-size: var(--card-subtitle-font-size);
-  font-weight: var(--card-subtitle-font-weight);
-} */
-
 .hebergements-and-populaires > section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
