@@ -502,7 +502,7 @@ footer {
 /* Le code ci-dessous correspondt à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Larges devices (desktop, less/equal than 1024px) */
+/* Larges devices (desktop, less/equal than 1440px) */
 @media (max-width: 1440px) {
   #logo-booki {
     margin: 1.88rem 1.88rem 1.88rem 0;
@@ -512,7 +512,7 @@ footer {
   }
 }
 
-/*  Medium devices (tablets, less than 768px) */
+/*  Medium devices (tablets, less than 1024px) */
 @media (max-width: 1024px) {
   #logo-booki {
     margin: 1.88rem 1.25rem;
@@ -521,10 +521,12 @@ footer {
   .searchContainer .search-filter {
     display: flex;
     flex-direction: column;
+    
   }
 
   .search-filter .filter-title {
     padding: 0;
+    align-self: start;
   }
 
   .filter-categorie > .filter-categorie-label {
