@@ -30,9 +30,9 @@
 
   --section-title-font-size: 1.375rem;
   --section-title-font-weight: 700;
-  --card-title-font-size: 1rem;
+  --card-title-font-size: 0.94rem;
   --card-title-font-weight: 700;
-  --card-subtitle-font-size: 0.875rem;
+  --card-subtitle-font-size: 0.8rem;
   --card-subtitle-font-weight: 400;
   --subtitle-font-size: 1.125rem;
   --subtitle-font-weight: 700;
@@ -503,7 +503,7 @@ footer {
 
 /****** Media queries ***********/
 /* Larges devices (desktop, less/equal than 1024px) */
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   #logo-booki {
     margin: 1.88rem 1.88rem 1.88rem 0;
   }
@@ -513,7 +513,7 @@ footer {
 }
 
 /*  Medium devices (tablets, less than 768px) */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #logo-booki {
     margin: 1.88rem 1.25rem;
   }
@@ -554,12 +554,12 @@ footer {
     width: 30%;
   }
 
-  .populaires-cards .card-title {
-    font-size: 14px;
+  .card-title {
+    font-size: 13px;
   }
 
-  .populaires-cards .card-subtitle {
-    font-size: 13px;
+    .card-subtitle {
+    font-size: 12px;
   }
 
   .activite-img {
@@ -655,6 +655,14 @@ footer {
 
   .filter-categorie {
     flex: 1;
+  }
+
+  .card-title {
+    font-size: var(--card-title-font-size);
+  }
+
+  .card-subtitle {
+    font-size: var(--card-subtitle-font-size);
   }
 
   .hebergements-and-populaires section {
