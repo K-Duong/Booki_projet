@@ -110,6 +110,10 @@ a {
 
 /* all cards hyperlink (hébergment, populaires & activités) */
 
+.card-hyperlink {
+   color: var(--black);
+}
+
 .card-hyperlink .card-hotel:hover,
 .card-hyperlink .card-populaire:hover,
 .card-hyperlink.card-hyperlink-activite:hover
@@ -727,7 +731,7 @@ footer {
   .activite-img {
     height: 8.5rem;
   }
-  
+
   footer {
     flex-direction: column;
     margin-top: 35px;
